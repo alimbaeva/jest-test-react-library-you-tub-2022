@@ -1,7 +1,7 @@
 const squer = require('./squer.js');
 
 
-describe('validateValue', () => {
+describe('squer', () => {
     let mockValue;
     // перед каждым тестом вызывается
     beforeEach(() => {
