@@ -1,0 +1,22 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "y",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "y",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.4.7"
+  },
+  "dependencies": {
+    "axios": "^0.25.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alimbaeva/jest-test-react-library-you-tub-2022.git"
+  }
+}
