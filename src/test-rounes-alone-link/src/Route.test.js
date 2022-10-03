@@ -31,18 +31,4 @@ describe('Test Router App', () => {
 
         expect(screen.getByText(/Error PAGE/i)).toBeInTheDocument();
     })
-
-    // part-1
-    // test('Router test', () => {
-    //     render(<App />);
-
-    //     const mainLink = screen.getByTestId('main-link');
-    //     const aboutLink = screen.getByTestId('about-link');
-
-    //     userEvent.click(aboutLink);
-    //     expect(screen.getByTestId('about-page')).toBeInTheDocument();
-        
-    //     userEvent.click(mainLink);
-    //     expect(screen.getByTestId('main-page')).toBeInTheDocument();
-    // })
 })
