@@ -1,12 +1,10 @@
-import { Link } from 'react-router-dom';
 import AppRouter from './routs/AppRouter';
+import Navbar from './components/Navbar/Navbar';
 
 function App() {
   return (
     <div>
-      <Link to='/' data-testid='main-link'>Main</Link>
-      <Link to='/about' data-testid='about-link'>About</Link>
-      <Link to='/users' data-testid='users-link'>Users</Link>
+      <Navbar />
       <AppRouter />
     </div>
   );

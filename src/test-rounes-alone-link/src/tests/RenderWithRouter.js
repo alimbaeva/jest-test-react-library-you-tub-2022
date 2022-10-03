@@ -2,7 +2,7 @@ import { MemoryRouter } from "react-router-dom";
 import AppRouter from "../routs/AppRouter";
 
 export const RenderWithRouter = (component, initialRoute = '/') => {
-    return (
+  return (
       <MemoryRouter initialEntries={[initialRoute]}>
         <AppRouter />
         {component}
