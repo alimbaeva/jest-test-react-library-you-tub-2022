@@ -1,12 +1,13 @@
-import CounterReducer from "./reducer/CounterReducer";
-import { combineReducers, configureStore } from "@reduxjs/toolkit";
+import counterReducer from './reducer/counterReducer.js';
+import {combineReducers, configureStore} from "@reduxjs/toolkit";
 
 const rootReducer = combineReducers({
-    counter: CounterReducer,
+    counter: counterReducer,
 })
 
-export const createReduxStore = () => {
+export const createReduxStore = (initialState = {}) => {
     return configureStore({
         reducer: rootReducer,
+        preloadedState: initialState,
     })
 }

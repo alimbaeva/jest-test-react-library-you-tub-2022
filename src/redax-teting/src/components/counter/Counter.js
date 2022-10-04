@@ -1,25 +1,27 @@
-import React from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { decrement, increment } from "../../store/reducer/CounterReducer";
-import getCounterValue from '../../store/reducer/selectores/getCounterValue/getCounterValue';
+import React from 'react';
+import {useDispatch, useSelector} from "react-redux";
+import getCounterValue from "../../store/reducer/selectores/getCounterValue/getCounterValue.js";
+import {decrement, increment} from "../../store/reducer/counterReducer.js";
 
 const Counter = () => {
-    const dispatch = useDispatch();
-    const value = useSelector(getCounterValue);
+    const dispatch = useDispatch()
+    const value = useSelector(getCounterValue)
 
     const onIncrement = () => {
         dispatch(increment())
     }
+
     const onDecrement = () => {
         dispatch(decrement())
     }
+
     return (
         <div>
-            <h1>value = {value}</h1>
-            <button onClick={onIncrement}>incriment</button>
-            <button onClick={onDecrement}>idecriment</button>
+            <h1 data-testid="value-title">{value}</h1>
+            <button data-testid="increment-btn" onClick={onIncrement}>increment</button>
+            <button data-testid="decrement-btn" onClick={onDecrement}>decrement</button>
         </div>
-    )
-}
+    );
+};
 
 export default Counter;
